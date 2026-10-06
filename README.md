@@ -54,13 +54,11 @@ Tokens are issued by FarmTogether and have an inclusive expiry date (UTC). A tok
 
 - [GET /farms/{farmId}](endpoints/farms.md) — farm overview
 - [GET /farms/{farmId}/report](endpoints/farms-report.md) — short farm report
-- [GET /farms/{farmId}/airtable-link](endpoints/farms-airtable-link.md)
 - [GET /farms/{farmId}/price-history](endpoints/farms-price-history.md)
 - [GET /farms/{farmId}/nearest-airport](endpoints/farms-nearest-airport.md)
 - [GET /farms/{farmId}/nearest-cities](endpoints/farms-nearest-cities.md)
 - [POST /farms/{farmId}/nearest-rejected](endpoints/farms-nearest-rejected.md)
 - [GET /farms/{farmId}/owner/other-properties](endpoints/farms-owner-other-properties.md)
-- [GET /farms/{farmId}/nearest-owned-properties](endpoints/farms-nearest-owned-properties.md)
 - [GET /farms/{farmId}/climate](endpoints/farms-climate.md)
 - [GET /farms/{farmId}/subsidence](endpoints/farms-subsidence.md)
 - [GET /farms/{farmId}/water](endpoints/farms-water.md)
@@ -90,9 +88,6 @@ Tokens are issued by FarmTogether and have an inclusive expiry date (UTC). A tok
 - [GET /crops/all](endpoints/crops-all.md)
 - [POST /crops/usda/legend](endpoints/crops-usda-legend.md)
 - [POST /crops/nlcd/legend](endpoints/crops-nlcd-legend.md)
-- [GET /farms/{farmId}/modeling/cap-rate/params](endpoints/farms-modeling-cap-rate-params.md)
-- [POST /farms/{farmId}/modeling/cap-rate/calculate](endpoints/farms-modeling-cap-rate-calculate.md)
-- [GET /documents/modeling/{documentId}](endpoints/documents-modeling.md) — xlsx download
 
 ### Search
 
@@ -168,7 +163,6 @@ Tokens are issued by FarmTogether and have an inclusive expiry date (UTC). A tok
 
 - [GET /acrevalue/sales](endpoints/acrevalue-sales.md)
 - [GET /acrevalue/sales/counties](endpoints/acrevalue-sales-counties.md)
-- [GET /farmtogether/investment-goals/aggregation](endpoints/farmtogether-investment-goals-aggregation.md)
 
 ### Tiles
 
