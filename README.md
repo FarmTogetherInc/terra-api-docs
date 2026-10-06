@@ -34,6 +34,7 @@ Tokens are issued by FarmTogether and have an inclusive expiry date (UTC). A tok
 | 401 | Missing, unknown or expired token |
 | 403 | Endpoint (method + path) is not in the read-only allowlist |
 | 400 | titiler: `url` query param outside the allowed S3 prefix or contains `..` |
+| 429 | More than 4 concurrent in-flight requests per token |
 
 ## Conventions
 
