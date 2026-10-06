@@ -159,6 +159,13 @@ Tokens are issued by FarmTogether and have an inclusive expiry date (UTC). A tok
 - [GET /boundary/{id}/get-data](endpoints/boundary-get-data.md)
 - [POST /elevation/at-point](endpoints/elevation-at-point.md)
 
+### Satellites
+
+- [GET /sats/thumbnail](endpoints/sats-thumbnail.md) — cached imagery only (cold cache → 404)
+- [POST /sats/planet](endpoints/sats-planet-search.md) — Planet scene metadata (DB)
+- [POST /sats/sky-watch](endpoints/sats-sky-watch-search.md) — SkyWatch scene metadata (DB)
+- [GET /farms/{farmId}/sats](endpoints/farms-sats.md) — per-farm SkyWatch scenes with pricing
+
 ### Market data
 
 - [GET /acrevalue/sales](endpoints/acrevalue-sales.md)
