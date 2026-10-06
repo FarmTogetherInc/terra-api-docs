@@ -23,8 +23,9 @@ None.
 
 Required semantics: a property listed in `required` corresponds to a non-nullable
 Kotlin constructor property of the DTO; nullable properties are optional (not
-required). JTS geometry fields appear as plain `object` schemas but serialize as
-GeoJSON on the wire.
+required). JTS geometry fields carry GeoJSON schemas (`Point`/`LineString`/
+`Polygon`/`MultiPolygon`; `Geometry` as a `oneOf` of those), matching the wire
+format produced by jackson-datatype-jts.
 
 Source of truth: `facade/src/main/kotlin/com/farmtogether/api/reference/ApiReferenceController.kt`.
 
