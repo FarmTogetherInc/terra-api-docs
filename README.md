@@ -46,6 +46,10 @@ Tokens are issued by FarmTogether and have an inclusive expiry date (UTC). A tok
 
 ## Endpoints
 
+### Reference
+
+- [GET /api-reference](endpoints/api-reference.md) — machine-readable endpoint list with JSON Schemas (draft-07)
+
 ### Farms
 
 - [GET /farms/{farmId}](endpoints/farms.md) — farm overview
