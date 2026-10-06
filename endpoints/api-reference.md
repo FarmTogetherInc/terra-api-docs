@@ -21,6 +21,11 @@ None.
 | `payloadSchema` | object? | JSON Schema draft-07 of the `@RequestBody` type |
 | `responseSchema` | object? | JSON Schema draft-07 of the response type (`ResponseEntity<T>` unwrapped to `T`; `void` omitted) |
 
+Required semantics: a property listed in `required` corresponds to a non-nullable
+Kotlin constructor property of the DTO; nullable properties are optional (not
+required). JTS geometry fields appear as plain `object` schemas but serialize as
+GeoJSON on the wire.
+
 Source of truth: `facade/src/main/kotlin/com/farmtogether/api/reference/ApiReferenceController.kt`.
 
 ```kotlin
@@ -63,3 +68,5 @@ Notes:
 - Schemas are built with victools `jsonschema-generator` + `JacksonModule` on the
   application `ObjectMapper` (KotlinModule, JavaTimeModule, JTS/GeoJSON), so they
   match the actual wire format.
+- Endpoints whose handler method is annotated `@ExcludeFromApiReference`
+  (facade-internal) are omitted from the list.
