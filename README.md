@@ -27,6 +27,21 @@ Authorization: Bearer 550e8400-e29b-41d4-a716-446655440000
 
 Tokens are issued by FarmTogether and have an inclusive expiry date (UTC). A token is valid through the end of its expiry date.
 
+## Read-only UI
+
+The same token also grants access to the Terra web UI in read-only mode. Navigate to:
+
+```
+https://terra.farmtogether.com/readonly-login
+```
+
+Your browser will prompt for basic auth credentials:
+
+- **Username:** any non-empty name (shown in logs as the session user)
+- **Password:** your API token
+
+After a successful login you are redirected to the main UI. Read-only sessions are held to the same endpoint allowlist as the token API (non-listed calls return `403`), and the internal dashboard is not available. Logging out and opening the UI again will prompt for the credentials anew; the token keeps working until its expiry date.
+
 ## Status codes
 
 | Code | Meaning |
